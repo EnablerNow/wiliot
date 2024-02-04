@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: 092988563851.dkr.ecr.eu-west-1.amazonaws.com/wiliot-ecr-repo
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"
+
+service:
+  type: LoadBalancer
+  port: 80
